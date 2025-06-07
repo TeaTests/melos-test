@@ -11,6 +11,27 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 Packages with breaking changes:
 
+ - There are no breaking changes in this release.
+
+Packages with other changes:
+
+ - [`calc` - `v0.0.2-calc.1`](#calc---v002-calc1)
+
+---
+
+#### `calc` - `v0.0.2-calc.1`
+
+ - **FEAT**: added additon, multiplication support.
+
+
+## 2025-06-07
+
+### Changes
+
+---
+
+Packages with breaking changes:
+
  - [`packageone` - `v0.1.0-calc.0`](#packageone---v010-calc0)
  - [`packagetwo` - `v0.1.0-calc.0`](#packagetwo---v010-calc0)
 

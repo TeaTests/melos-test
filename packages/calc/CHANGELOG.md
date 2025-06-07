@@ -1,3 +1,7 @@
+## 0.0.2-calc.1
+
+ - **FEAT**: added additon, multiplication support.
+
 ## 0.0.2-calc.0
 
  - **FEAT**: added calc package.
