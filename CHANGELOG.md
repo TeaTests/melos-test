@@ -15,6 +15,34 @@ Packages with breaking changes:
 
 Packages with other changes:
 
+ - [`packageone` - `v0.1.0-package-update.1`](#packageone---v010-package-update1)
+ - [`packagetwo` - `v0.1.0-package-update.2`](#packagetwo---v010-package-update2)
+
+Packages with dependency updates only:
+
+> Packages listed below depend on other packages in this workspace that have had changes. Their versions have been incremented to bump the minimum dependency versions of the packages they depend upon in this project.
+
+ - `packagetwo` - `v0.1.0-package-update.2`
+
+---
+
+#### `packageone` - `v0.1.0-package-update.1`
+
+ - **FEAT**: add two numbers.
+
+
+## 2025-06-07
+
+### Changes
+
+---
+
+Packages with breaking changes:
+
+ - There are no breaking changes in this release.
+
+Packages with other changes:
+
  - [`packagetwo` - `v0.1.0-package-update.1`](#packagetwo---v010-package-update1)
 
 ---
