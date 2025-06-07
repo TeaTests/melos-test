@@ -15,6 +15,33 @@ Packages with breaking changes:
 
 Packages with other changes:
 
+ - [`packageone` - `v0.1.0`](#packageone---v010)
+ - [`packagetwo` - `v0.1.0`](#packagetwo---v010)
+
+Packages graduated to a stable release (see pre-releases prior to the stable version for changelog entries):
+
+ - `packageone` - `v0.1.0`
+ - `packagetwo` - `v0.1.0`
+
+---
+
+#### `packageone` - `v0.1.0`
+
+#### `packagetwo` - `v0.1.0`
+
+
+## 2025-06-07
+
+### Changes
+
+---
+
+Packages with breaking changes:
+
+ - There are no breaking changes in this release.
+
+Packages with other changes:
+
  - [`packageone` - `v0.1.0-package-update.1`](#packageone---v010-package-update1)
  - [`packagetwo` - `v0.1.0-package-update.2`](#packagetwo---v010-package-update2)
 
