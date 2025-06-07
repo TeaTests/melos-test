@@ -9,6 +9,12 @@ environment:
   flutter: ">=1.17.0"
 
 dependencies:
+  packageone:
+    git:
+      url: git@github.com:rahul-2901/melos-test.git
+      path: packages/packageone
+      ref: packagetwo-v0.1.0-package-update.0
+
   flutter:
     sdk: flutter
 
