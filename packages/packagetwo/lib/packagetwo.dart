@@ -2,6 +2,6 @@ library packagetwo;
 
 /// A Calculator.
 class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
+  /// Returns [value] added to itself [times] time.
+  int multiply(int value, int times) => value * times;
 }
