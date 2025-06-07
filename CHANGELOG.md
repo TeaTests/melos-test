@@ -11,6 +11,27 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 Packages with breaking changes:
 
+ - There are no breaking changes in this release.
+
+Packages with other changes:
+
+ - [`packagetwo` - `v0.1.0-package-update.1`](#packagetwo---v010-package-update1)
+
+---
+
+#### `packagetwo` - `v0.1.0-package-update.1`
+
+ - **FEAT**: added addition + multiplication support.
+
+
+## 2025-06-07
+
+### Changes
+
+---
+
+Packages with breaking changes:
+
  - [`packageone` - `v0.1.0-package-update.0`](#packageone---v010-package-update0)
  - [`packagetwo` - `v0.1.0-package-update.0`](#packagetwo---v010-package-update0)
 
