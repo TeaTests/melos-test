@@ -2,6 +2,7 @@ name: calc
 description: "A new Flutter package project."
 version: 0.0.2-calc.0
 homepage:
+publish_to: none
 
 environment:
   sdk: ^3.5.4
