@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 2025-06-08
+
+### Changes
+
+---
+
+Packages with breaking changes:
+
+ - There are no breaking changes in this release.
+
+Packages with other changes:
+
+ - [`calc` - `v0.0.2-calc.1`](#calc---v002-calc1)
+
+---
+
+#### `calc` - `v0.0.2-calc.1`
+
+ - **FEAT**: added additon, multiplication support.
+
+
 ## 2025-06-07
 
 ### Changes
