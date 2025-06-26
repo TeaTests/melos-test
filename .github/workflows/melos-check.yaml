@@ -1,0 +1,39 @@
+name: Validate Melos Version Conflicts
+
+on:
+  pull_request:
+    branches:
+      - master-stag
+
+jobs:
+  check-versions:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout PR Code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Required to access other branches
+
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.22.0'
+
+      - name: Activate Melos
+        run: dart pub global activate melos
+
+      - name: Compare Versions with master-stag
+        run: |
+          git fetch origin master-stag
+          git checkout origin/master-stag
+          melos list --long | awk '{print $1, $2}' | sort > ../master-stag.txt
+
+          git checkout ${{ github.head_ref }}
+          melos list --long | awk '{print $1, $2}' | sort > ../feature.txt
+
+          echo "Comparing versions..."
+          diff ../master-stag.txt ../feature.txt || {
+            echo "❌ Version mismatch detected. Please resolve.";
+            exit 1;
+          }
