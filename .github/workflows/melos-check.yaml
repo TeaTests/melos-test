@@ -21,7 +21,9 @@ jobs:
           flutter-version: '3.24.4'
 
       - name: Activate Melos
-        run: dart pub global activate melos
+        run: |
+          dart pub global activate melos
+          melos bootstrap
 
       - name: Compare Versions with master
         run: |
