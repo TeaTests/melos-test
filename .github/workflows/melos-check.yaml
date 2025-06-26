@@ -3,7 +3,7 @@ name: Validate Melos Version Conflicts
 on:
   pull_request:
     branches:
-      - master-stag
+      - master
 
 jobs:
   check-versions:
@@ -23,17 +23,17 @@ jobs:
       - name: Activate Melos
         run: dart pub global activate melos
 
-      - name: Compare Versions with master-stag
+      - name: Compare Versions with master
         run: |
-          git fetch origin master-stag
-          git checkout origin/master-stag
-          melos list --long | awk '{print $1, $2}' | sort > ../master-stag.txt
+          git fetch origin master
+          git checkout origin/master
+          melos list --long | awk '{print $1, $2}' | sort > ../master.txt
 
           git checkout ${{ github.head_ref }}
           melos list --long | awk '{print $1, $2}' | sort > ../feature.txt
 
           echo "Comparing versions..."
-          diff ../master-stag.txt ../feature.txt || {
+          diff ../master.txt ../feature.txt || {
             echo "❌ Version mismatch detected. Please resolve.";
             exit 1;
           }
