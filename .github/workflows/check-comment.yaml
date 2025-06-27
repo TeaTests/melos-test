@@ -1,0 +1,17 @@
+name: "Check PR Description"
+on:
+  pull_request:
+    types: [opened, edited, reopened, synchronize]
+
+jobs:
+  comment-check:
+    name: Validate PR Description
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ensure PR description exists
+        uses: transferwise/actions-pr-checker@v3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_CONTAINS_PATTERN: '.{20,}'       # requires ≥20 characters
+          PR_COMMENT: |
+            Please provide a meaningful description (at least 20 characters).
